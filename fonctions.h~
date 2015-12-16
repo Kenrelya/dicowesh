@@ -1,0 +1,30 @@
+/*
+** fonctions.h for  in /home/senhaj_s/piscine/dicowesh
+** 
+** Made by SENHAJI Sophia
+** Login   <senhaj_s@etna-alternance.net>
+** 
+** Started on  Thu Nov  5 10:16:00 2015 SENHAJI Sophia
+** Last update Fri Nov  6 22:32:37 2015 SENHAJI Sophia
+*/
+
+#include "my_dico.h"
+#ifndef __FONCTIONS_H__
+#define __FONCTIONS_H__
+
+void	menu();
+void	my_putchar(char c);
+void	my_putstr(char str[]);
+char	*readLine();
+int	my_strcmp(char *str1, char *str2);
+t_word	*init(t_word *list);
+void	french_to_wesh(t_word **dico, char *str, int (*cmp)());
+void	wesh_to_french(t_word **dico, char *str, int (*cmp)());
+int	my_list_size(t_word **begin);
+void	my_sort_wesh(t_word **dico, int(*cmp)());
+void	my_sort_french(t_word **dico, int(*cmp)());
+int	isalphanum(char *str);
+//void	clean_dico(t_word *dico);
+void	tri(t_word **dico, t_word **debut, t_word *prev, t_word *suivant);
+
+#endif
